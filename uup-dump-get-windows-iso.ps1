@@ -4,7 +4,7 @@ param(
   [string]$windowsTargetName,
   [string]$destinationDirectory = 'output',
   [ValidateSet("x64", "arm64")] [string]$architecture = "x64",
-  [ValidateSet("pro", "core", "multi", "home")] [string]$edition = "pro",
+  [ValidateSet("pro", "core", "multi", "home", "n", "pro-n", "home-n", "multi-n")] [string]$edition = "pro",
   [ValidateSet("nb-no", "fr-ca", "fi-fi", "lv-lv", "es-es", "en-gb", "zh-tw", "th-th", "sv-se", "en-us", "es-mx", "bg-bg", "hr-hr", "pt-br", "el-gr", "cs-cz", "it-it", "sk-sk", "pl-pl", "sl-si", "neutral", "ja-jp", "et-ee", "ro-ro", "fr-fr", "pt-pt", "ar-sa", "lt-lt", "hu-hu", "da-dk", "zh-cn", "uk-ua", "tr-tr", "ru-ru", "nl-nl", "he-il", "ko-kr", "sr-latn-rs", "de-de")]
   [string]$lang = "en-us",
   [switch]$esd,
@@ -106,10 +106,14 @@ if ($windowsTargetName -match 'beta|dev|wif|canary') {
 
 function Get-EditionName($e) {
   switch ($e.ToLower()) {
-    "core"  { "Core" }
-    "home"  { "Core" }
-    "multi" { "Multi" }
-    default { "Professional" }
+    "core"    { "Core" }
+    "home"    { "Core" }
+    "n"       { "CoreN" }
+    "home-n"  { "CoreN" }
+    "pro-n"   { "ProfessionalN" }
+    "multi"   { "Multi" }
+    "multi-n" { "MultiN" }
+    default   { "Professional" }
   }
 }
 
@@ -236,6 +240,12 @@ L4: Got langs=$($langs -join ',')."
 L6: Expected editions=Multi (Professional/Core). Got editions=$($editions -join ',')."
           $res = $false
         }
+      } elseif ((Get-EditionName $edition) -eq "MultiN") {
+        if (($editions -notcontains "ProfessionalN") -and ($editions -notcontains "CoreN")) {
+          Write-CleanLine "Skipping.
+L8: Expected editions=MultiN (ProfessionalN/CoreN). Got editions=$($editions -join ',')."
+          $res = $false
+        }
       } elseif ($editions -notcontains (Get-EditionName $edition)) {
         Write-CleanLine ("Skipping. Expected editions={0}.
 L7: Got editions={1}." -f (Get-EditionName $edition), ($editions -join ','))
@@ -252,6 +262,11 @@ L7: Got editions={1}." -f (Get-EditionName $edition), ($editions -join ','))
   | Select-Object -First 1
   | ForEach-Object {
       $id = $_.Value.uuid
+      $editionParam = switch ($edition) {
+        "multi"   { "core;professional" }
+        "multi-n" { "coren;professionaln" }
+        default   { $target.edition }
+      }
       [PSCustomObject]@{
         name               = $name
         title              = $_.Value.title
@@ -259,9 +274,9 @@ L7: Got editions={1}." -f (Get-EditionName $edition), ($editions -join ','))
         id                 = $id
         edition            = $target.edition
         virtualEdition     = $target['virtualEdition']
-        apiUrl             = 'https://api.uupdump.net/get.php?' + (New-QueryString @{ id = $id; lang = $lang; edition = if ($edition -eq "multi") { "core;professional" } else { $target.edition } })
-        downloadUrl        = 'https://uupdump.net/download.php?' + (New-QueryString @{ id = $id; pack = $lang; edition = if ($edition -eq "multi") { "core;professional" } else { $target.edition } })
-        downloadPackageUrl = 'https://uupdump.net/get.php?' + (New-QueryString @{ id = $id; pack = $lang; edition = if ($edition -eq "multi") { "core;professional" } else { $target.edition } })
+        apiUrl             = 'https://api.uupdump.net/get.php?' + (New-QueryString @{ id = $id; lang = $lang; edition = $editionParam })
+        downloadUrl        = 'https://uupdump.net/download.php?' + (New-QueryString @{ id = $id; pack = $lang; edition = $editionParam })
+        downloadPackageUrl = 'https://uupdump.net/get.php?' + (New-QueryString @{ id = $id; pack = $lang; edition = $editionParam })
       }
     }
 }
