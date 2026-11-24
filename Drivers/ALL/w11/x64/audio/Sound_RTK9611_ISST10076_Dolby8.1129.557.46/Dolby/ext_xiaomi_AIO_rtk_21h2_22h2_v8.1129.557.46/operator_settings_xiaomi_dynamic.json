@@ -1,0 +1,31 @@
+{
+  "format_version": "1.0.0",
+  "change_version": "1",
+  "change_date": "2023-03-15 01:10:25",
+  "source": "2.0.5.0",
+  "import": "operator_settings.json",
+  "settings": {
+    "default_profile": [
+      {
+        "endpoint": "internal_speaker",
+        "spatial_audio": false,
+        "profile": "dynamic"
+      },
+      {
+        "endpoint": "internal_speaker",
+        "spatial_audio": true,
+        "profile": "dynamic"
+      },
+      {
+        "endpoint": "headphone",
+        "spatial_audio": false,
+        "profile": "dynamic"
+      },
+      {
+        "endpoint": "headphone",
+        "spatial_audio": true,
+        "profile": "dynamic"
+      }
+    ]
+  }
+}

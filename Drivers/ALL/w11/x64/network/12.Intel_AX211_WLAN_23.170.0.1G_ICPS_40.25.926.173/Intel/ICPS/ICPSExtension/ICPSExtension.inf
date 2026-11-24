@@ -1,0 +1,866 @@
+;
+; Intel Connectivity Performance Suite IHV Extension (ICPS)
+;
+; Copyright (C) 1997-2020 Intel Corporation. All rights reserved.
+;
+; The information and source code contained herein is the exclusive
+; property of Intel Corporation and may not be disclosed, examined
+; or reproduced in whole or in part without explicit written authorization
+; from the company.
+;
+;------------------------------------------------------------------------------
+[Version]
+Signature	= "$WINDOWS NT$"
+Provider = %ManufacturerName%
+DriverVer = 09/26/2025,40.25.926.173
+PnPLockdown = 1
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId = {22D4D930-0FF9-4DAB-A3E6-DC69BE9B7D72}
+CatalogFile	= ICPSExtension.cat
+
+[Manufacturer]
+%ManufacturerName% = ICPSExtension, NTamd64.10.0...19041
+
+[ICPSExtension.NTamd64.10.0...19041]
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_02F0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_06F0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2720&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2720&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2720&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2720&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2720&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2720&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2722&SUBSYS_00508086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2723&SUBSYS_00808086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2723&SUBSYS_00848086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2723&SUBSYS_00888086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2723&SUBSYS_008C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2723&SUBSYS_20808086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2723&SUBSYS_40808086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2723&SUBSYS_40888086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2724&SUBSYS_00508086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_00208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2725&SUBSYS_00248086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_20208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_40208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_60208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2725&SUBSYS_60248086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2725&SUBSYS_E0208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2725&SUBSYS_E0248086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_40B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2726&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2726&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00788086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_007C8086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00948086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00988086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_009C8086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00B48086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00C08086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_01008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_02448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_02748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_20748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_40708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_40908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_40B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_40C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_40E08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_2727&SUBSYS_41108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_42448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_42748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_43148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_2727&SUBSYS_60748086 ; AX
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00008086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_01008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00508086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00708086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E08086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E88086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00908086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00B08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00C08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00F08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_00F48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_01008086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_01008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_02F48086 ;; MtP
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_03108086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_03148086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_05108086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_0A108086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40708086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40908086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40B08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40C48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40E08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272B&SUBSYS_40F08086  ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_41108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_42F48086 ;; MtP
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_43148086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272B&SUBSYS_E0F48086 ; BE
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272D&SUBSYS_01108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272D&SUBSYS_01148086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272D&SUBSYS_01188086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272D&SUBSYS_011C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272D&SUBSYS_03108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272D&SUBSYS_03148086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272D&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272D&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_272D&SUBSYS_41108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_272D&SUBSYS_43148086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_34F0&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_3DF0&SUBSYS_00508086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_43F0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4DF0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00008086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00C08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00E08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00E48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00E88086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_00EC8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_01008086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_01108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_01148086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_01188086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_011C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_03108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_03148086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_40B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_40C48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_40E08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_41108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_43148086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_4D40&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_40B08086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_003C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_023C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_20348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_42348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_42A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_80748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00208086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00788086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00988086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02608086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_02A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_20308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_51F1&SUBSYS_40B08086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_003C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_023C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_20348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_42348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_42A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40B08086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_80748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00788086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00988086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02608086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_02A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_20308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_54F0&SUBSYS_40908086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_00008086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_00E08086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_00E48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_00E88086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_00EC8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_01108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_01148086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_01188086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_011C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_03108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_03148086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_05108086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_0A108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_17711A56
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_17721A56
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_40E08086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_41108086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_6E70&SUBSYS_43148086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00788086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_007C8086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00948086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00988086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_009C8086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00B48086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00C08086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_01008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_02448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_02748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_20748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_40708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_40908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_40B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_40C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_40E08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7740&SUBSYS_41108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_42448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_42748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_43148086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7740&SUBSYS_60748086 ; AX
+
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_003C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_023C8086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02648086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_20348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_42348086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_42A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40A48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40B08086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00788086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00988086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02388086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02608086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_02A08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_20308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40308086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7A70&SUBSYS_40B08086 ; vPro
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_60748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7AF0&SUBSYS_40B08086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00008086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00C08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_40B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_40C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7E40&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00008086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00988086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_009C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00B48086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00C08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_00C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_02448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_03108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_05108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_40908086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_40B08086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_40C48086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_7F70&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_00508086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_00708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_00748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_00788086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_007C8086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_02708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_02748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_0A108086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_20748086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_40708086 ; vPro
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_42448086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_42748086
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A0F0&SUBSYS_60748086
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00788086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_007C8086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00948086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00988086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_009C8086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00B48086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00C08086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_01008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_02448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_02748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_20748086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_40708086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_40908086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_40B08086 ; AX_6G
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_40C48086 ; AX
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_40E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_A840&SUBSYS_41108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_42448086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_42748086 ; AX_no_160
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_43148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_A840&SUBSYS_60748086 ; AX
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_01148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_D340&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_40E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_41108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_D340&SUBSYS_43148086 ; BE
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_01148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E340&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_40E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_41108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E340&SUBSYS_43148086 ; BE
+
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00008086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00E48086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00E88086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00EC8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_00948086
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_01108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_01148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_01188086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_011C8086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_03108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_Install , PCI\VEN_8086&DEV_E440&SUBSYS_03148086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_05108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_0A108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_40E08086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_41108086 ; BE
+%Device.ExtensionDesc% = ICPSExtension_vPro_Install , PCI\VEN_8086&DEV_E440&SUBSYS_43148086 ; BE
+
+[ICPSExtension_Install]
+
+[ICPSExtension_Install.Components]
+AddComponent = ICPS,, ICPSDevNode_Install
+
+[ICPSDevNode_Install]
+ComponentIds = VID_8086&PID_ICPS&SID_0001 ; Matches with SWC\VID_8086&PID_ICPS&SID_0001, ICPS Base config
+
+[ICPSExtension_vPro_Install]
+
+[ICPSExtension_vPro_Install.Components]
+AddComponent = ICPS,, ICPSDevNode_vPro_Install
+
+[ICPSDevNode_vPro_Install]
+ComponentIds = VID_8086&PID_ICPS&SID_0002 ; Matches with SWC\VID_8086&PID_ICPS&SID_0002, ICPS vPro config
+
+[SourceDisksNames]
+
+
+[SourceDisksFiles]
+
+
+[DestinationDirs]
+
+; User visible strings
+;-------------------------------------------------
+
+; English (default)
+[Strings]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite extension"
+
+; Arabic (Saudi Arabia)
+[Strings.0401]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "نامج Intel® Connectivity Performance Suite"
+
+; Chinese (Simplified)
+[Strings.0804]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "英特尔® Connectivity Performance Suite 扩展"
+
+; Chinese (Traditional)
+[Strings.0404]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite 擴充套件"
+
+; Chinese (Hong Kong)
+[Strings.0C04]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite 擴充套件"
+
+; Czech (Czech Republic)
+[Strings.0405]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Rozšíření aplikace Intel® Connectivity Performance Suite"
+
+; Danish (Denmark)
+[Strings.0406]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite udvidelse"
+
+; German (Germany)
+[Strings.0407]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite Erweiterung"
+
+; Greek (Greece)
+[Strings.0408]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Επέκταση του Connectivity Performance Suite"
+
+; Spanish (Spain)
+[Strings.0C0A]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Extensión del Intel® Connectivity Performance Suite"
+
+; Finnish (Finland)
+[Strings.040B]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite laajennus"
+
+; French (France)
+[Strings.040C]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Extension pour le Intel® Connectivity Performance Suite"
+
+; Hebrew (Israel)
+[Strings.040D]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "של תוכנת Intel® Connectivity Performance Suite"
+
+; Hungarian (Hungary)
+[Strings.040E]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite kiterjesztés"
+
+; Italian (Italy)
+[Strings.0410]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Estensione del Intel® Connectivity Performance Suite"
+
+; Japanese (Japan)
+[Strings.0411]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "インテル® Connectivity Performance Suite エクステンション"
+
+; Korean (Korea)
+[Strings.0412]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "인텔® Connectivity Performance Suite 확장"
+
+; Dutch (Netherlands)
+[Strings.0413]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Uitbreiding van de Intel® Connectivity Performance Suite"
+
+; Norwegian Bokmål (Norway)
+[Strings.0414]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite vareutvidelse"
+
+; Polish (Poland)
+[Strings.0415]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Rozszerzenie Intel® Connectivity Performance Suite"
+
+; Portuguese (Brazil)
+[Strings.0416]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Extensão do Intel® Connectivity Performance Suite"
+
+; Portuguese (Portugal)
+[Strings.0816]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Extensão do Intel® Connectivity Performance Suite"
+
+; Russian (Russia)
+[Strings.0419]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Расширение Intel® Connectivity Performance Suite"
+
+; Swedish (Sweden)
+[Strings.041D]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Tillägg till Intel® Connectivity Performance Suite"
+
+; Thai (Thailand)
+[Strings.041E]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite ส่วนขยาย"
+
+; Turkish (Turkey)
+[Strings.041F]
+ManufacturerName     = "Intel Corporation"
+Device.ExtensionDesc = "Intel® Connectivity Performance Suite uzantısı"

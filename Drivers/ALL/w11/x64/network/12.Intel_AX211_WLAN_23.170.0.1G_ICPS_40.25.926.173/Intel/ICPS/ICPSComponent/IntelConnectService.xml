@@ -1,0 +1,17 @@
+<service>
+  <id>IntelConnectService</id>
+  <name>IntelConnect Service</name>
+  <description>This service suggests or automatically switches to the best known WiFi AP.</description>
+  <env name="XCS_HOME" value="%BASE%"/>
+  <executable>IntelConnect.exe</executable>
+  <arguments></arguments>
+  <logmode>rotate</logmode>
+  <startmode>Automatic</startmode>
+  <depend>Netman</depend>
+  <depend>NetSetupSvc</depend>
+  <depend>LanmanServer</depend>
+  <delaystart>false</delaystart>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+</service>

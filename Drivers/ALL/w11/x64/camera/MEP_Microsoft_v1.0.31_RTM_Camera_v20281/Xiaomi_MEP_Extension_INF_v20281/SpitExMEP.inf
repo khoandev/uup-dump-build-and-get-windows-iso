@@ -1,0 +1,53 @@
+; Localized     09/19/2023 15:00 (GMT+08:00) 2.0.28.1 SpitExMEP.inf 
+; Video Capture Driver installation information 
+; Copyright (c) Sunplus Innovation Tech 
+; Manufacturer: Sunplus Innovation Tech
+
+[Version]
+signature="$CHICAGO$"
+Class= Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId={64B5F08D-B89A-4155-B784-C98897BCDCEF}
+Provider=%ProviderName%
+DriverVer=09/19/2023,2.0.28.1
+CatalogFile=SpitExMEP.cat
+
+[Manufacturer]
+%SunplusIT.MfgName%=SunplusIT.Section,NTamd64
+
+[SunplusIT.Section.NTamd64]
+%CAMERA.DeviceDesc%=SPUVCb.Device,USB\VID_1BCF&PID_2D14&MI_00
+%CAMERA.DeviceDesc%=SPUVCb.Device,USB\VID_2B7E&PID_C817&MI_00
+
+;----------------------------------------------------------------------------------
+
+[SPUVCb.Device.NT]
+PreferDeviceInfo=1
+
+;----------------------------------------------------------------------------------
+
+[SPUVCb.Device.NT.HW]
+
+;----------------------------------------------------------------------------------
+
+[SPUVCb.Device.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",SPUVCB.RGB.VideoCapture
+AddInterface=%KSCATEGORY_VIDEO%,"GLOBAL",SPUVCB.RGB.VideoCapture
+AddInterface=%KSCATEGORY_VIDEO_CAMERA%,"GLOBAL",SPUVCB.RGB.VideoCapture
+
+[SPUVCB.RGB.VideoCapture]
+AddReg=SPUVCB.RGB.VideoCapture.AddReg
+
+[SPUVCB.RGB.VideoCapture.AddReg]
+HKR,,FSMEnableMSEffects,0x00010001,0x00000001
+
+;----------------------------------------------------------------------------------
+
+[Strings]
+ProviderName      = "SunplusIT"
+SunplusIT.MfgName = "SunplusIT"
+CAMERA.DeviceDesc = "USB Camera"
+
+KSCATEGORY_CAPTURE       = "{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_VIDEO         = "{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_VIDEO_CAMERA  = "{E5323777-F976-4f5b-9B55-B94699C46E44}"

@@ -1,0 +1,780 @@
+;
+; Intel Connectivity Performance Suite IHV Component (ICPS)
+;
+; Copyright (C) 1997-2020 Intel Corporation. All rights reserved.
+;
+; The information and source code contained herein is the exclusive
+; property of Intel Corporation and may not be disclosed, examined
+; or reproduced in whole or in part without explicit written authorization
+; from the company.
+;
+;------------------------------------------------------------------------------
+
+[Version]
+Signature	         = "$WINDOWS NT$"
+Provider             = %IntelCorp%
+DriverVer = 09/26/2025,40.25.926.173
+PnPLockdown          = 1
+Class                = SoftwareComponent
+ClassGuid            = {5c4c3332-344d-483c-8739-259e934c9cc8}
+CatalogFile	         = ICPSComponent.cat
+
+[Manufacturer]
+%IntelCorp% = ICPSComponent, NTamd64.10.0...19041, NTamd64.10.0...21262
+
+[ICPSComponent.NTamd64.10.0...19041]
+%ICPSComponent% = ICPSComponent_Install_W10, SWC\VID_8086&PID_ICPS&SID_0001
+%ICPSComponent% = ICPSComponent_vPro_Install_W10, SWC\VID_8086&PID_ICPS&SID_0002
+%ICPSComponent% = ICPSComponent_Install_W10_Surface, {405666A0-3B5C-47F3-9BEE-885778D56E61}\INTEL_ICPS ; Surface
+%ICPSComponent% = ICPSComponent_Install_W10_SurfaceADL, {1392777D-8FD5-4F17-B1BD-A03F96DBFF19}\INTEL_ICPS ; Surface
+%ICPSComponent% = ICPSComponent_vPro_Install_W10_Dell, {D9B17877-8CA0-4FAD-94CA-00B16E47A53F}\ICPS_Dell
+%ICPSComponent% = ICPSComponent_Install_W10_IID, {D9B17877-8CA0-4FAD-94CA-00B16E47A53F}\ICPS  ; ICPS Install Driver
+%ICPSComponent% = ICPSComponent_Install_W10_ICA, SWC\VID_8086&PID_ICPS&SID_1001 ; ICA
+%ICPSComponent% = ICPSComponent_vPro_Install_W10_ICA, SWC\VID_8086&PID_ICPS&SID_1002 ; ICA
+
+[ICPSComponent.NTamd64.10.0...21262]
+%ICPSComponent% = ICPSComponent_Install_W11, SWC\VID_8086&PID_ICPS&SID_0001
+%ICPSComponent% = ICPSComponent_vPro_Install_W11, SWC\VID_8086&PID_ICPS&SID_0002
+%ICPSComponent% = ICPSComponent_Install_W11_Surface, {405666A0-3B5C-47F3-9BEE-885778D56E61}\INTEL_ICPS ; Surface
+%ICPSComponent% = ICPSComponent_Install_W11_SurfaceADL, {1392777D-8FD5-4F17-B1BD-A03F96DBFF19}\INTEL_ICPS ; Surface
+%ICPSComponent% = ICPSComponent_vPro_Install_W11_Dell, {D9B17877-8CA0-4FAD-94CA-00B16E47A53F}\ICPS_Dell
+%ICPSComponent% = ICPSComponent_Install_W11_IID, {D9B17877-8CA0-4FAD-94CA-00B16E47A53F}\ICPS ; ICPS Install Driver
+%ICPSComponent% = ICPSComponent_Install_W11_ICA, SWC\VID_8086&PID_ICPS&SID_1001 ; ICA
+%ICPSComponent% = ICPSComponent_vPro_Install_W11_ICA, SWC\VID_8086&PID_ICPS&SID_1002 ; ICA
+
+[SourceDisksFiles]
+AnalyticsDataAccess.dll=1,,
+CustomizeInstallFirstRun.exe=1,,
+EnableStartService.exe=1,,
+IDBWM.exe=1,,
+IDBWMService.exe=1,,
+IDBWMService.xml=1,,
+IntcCo10X64.sys=1,,
+IntcCo11X64.sys=1,,
+IntelAnalyticsEventLogMessages.dll=1,,
+IntelAnalyticsService.exe=1,,
+IntelConnect.exe=1,,
+IntelConnectAPI.dll=1,,
+IntelConnectService.exe=1,,
+IntelConnectService.xml=1,,
+IntelConnectivityCInstallEventLogMessages.dll=1,,
+IntelConnectivityEventLogMessages.dll=1,,
+IntelConnectivityNetworkService.exe=1,,
+IntelProviderDataHelperService.exe=1,,
+LicenseAttribution.txt=1,,
+QRCoder.dll=1,,
+RNIdleTask.exe=1,,
+RNUtils.dll=1,,
+SQLite.Interop.dll=1,,
+System.Data.SQLite.dll=1,,
+WifiCredentialPrompter.exe=1,,
+IntelIHVPipeClient.dll=1,,
+iwsdk.dll=1,,
+oem.xml=1,,
+rn.stg=1,,
+user.xml=1,,
+
+[SourceDisksNames]
+1="Bundle",,,""
+
+[InstallFileList]
+AnalyticsDataAccess.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+CustomizeInstallFirstRun.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+EnableStartService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IDBWM.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IDBWMService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IDBWMService.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelAnalyticsEventLogMessages.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelAnalyticsService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnect.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectAPI.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectService.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectivityCInstallEventLogMessages.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectivityEventLogMessages.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelConnectivityNetworkService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelProviderDataHelperService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+LicenseAttribution.txt,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+QRCoder.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHEC
+RNIdleTask.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+RNUtils.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+SQLite.Interop.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+System.Data.SQLite.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+WifiCredentialPrompter.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+IntelIHVPipeClient.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+iwsdk.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+oem.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+rn.stg,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+user.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[CopyFiles_Driver_W10]
+IntcCo10X64.sys,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[CopyFiles_Driver_W11]
+IntcCo11X64.sys,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[DestinationDirs]
+DefaultDestDir=12,Intel\ICPS
+
+[ICPSComponent_Install_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_Install_W10_IID]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_Install_W10_ICA]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_Install_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_Install_W11_IID]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_Install_W11_ICA]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_vPro_Install_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_vPro_Install_W10_ICA]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_vPro_Install_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_vPro_Install_W11_ICA]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_Install_W10_Surface]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_Install_W10_SurfaceADL]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_Install_W11_Surface]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_Install_W11_SurfaceADL]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_vPro_Install_W10_Dell]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+
+[ICPSComponent_vPro_Install_W11_Dell]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+
+[ICPSComponent_Install_W10.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W10_IID.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.IID,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W10_ICA.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.ICA,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W11.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W11_IID.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.IID,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W11_ICA.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.ICA,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W10.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.vPro,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W10_ICA.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.vPro_ICA,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W11.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.vPro,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W11_ICA.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.vPro_ICA,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W10_Surface.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.Surface,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W10_SurfaceADL.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.SurfaceADL,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W11_Surface.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.Surface,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W11_SurfaceADL.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.SurfaceADL,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W10_Dell.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW10.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.Dell,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_vPro_Install_W11_Dell.Services]
+AddService = , 0x00000002
+AddService = %IntelCoServiceName%,,IntcCoW11.Service
+AddService = %ICPS_Service%,0x00000800,ServiceInstall.Dell,EventLogInstall
+AddService = %ICService%,,IntelConnectServiceInstall
+AddService = %IDBWMService%,,IDBWMServiceInstall
+AddService = %ICPSAnalyticsService%,0x00000800,IntelAnalyticsServiceInstall
+AddService = %ICPSProviderDataHelperService%,0x00000800,IntelProviderDataHelperServiceInstall
+
+[ICPSComponent_Install_W10.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W10_IID.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W11.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W11_IID.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_vPro_Install_W10.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_vPro_Install_W11.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W10_Surface.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W10_SurfaceADL.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W11_Surface.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[ICPSComponent_Install_W11_SurfaceADL.Software]
+AddSoftware=ICPS,0,Intel_Connectivity_Manager_Software
+
+[Intel_Connectivity_Manager_Software]
+SoftwareType=2
+SoftwareBinary=ICPS.exe
+SoftwareVersion=40.25.926.173
+SoftwareID=pfn://AppUp.IntelConnectivityPerformanceSuite_8j3eq9eme6ctt
+
+[ServiceInstall]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry, DBWRegistry, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.IID]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry_IID, DBWRegistry, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.ICA]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry_ICA, DBWRegistry, MonitorModeRegistry, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.vPro]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry, DBWRegistry, vProRegistry, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.vPro_ICA]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry_ICA, DBWRegistry, vProRegistry, MonitorModeRegistry, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.Surface]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry, DBWRegistry, vProRegistry, SurfaceReg, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.SurfaceADL]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry, DBWRegistry, vProRegistry, SurfaceADLReg, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[ServiceInstall.Dell]
+AddReg=ICPSCOM, EventLogRegistry, FirstRunRegistry, DBWRegistry, vProRegistry, DellReg, APSRegistry
+DisplayName=%ICPS_Service%
+Description=%ICPSServiceDesc%
+Dependencies=nsi,EventLog,intccosvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectivityNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1
+
+[IntcCoW10.Service]
+DisplayName      = %IntelCoServiceName%
+Description      = %IntelCoServiceDesc%
+ServiceBinary    = %12%\Intel\ICPS\IntcCo10X64.sys
+ServiceType      = 1; SERVICE_KERNEL_DRIVER
+StartType        = 3; SERVICE_DEMAND_START
+ErrorControl     = 1; SERVICE_ERROR_NORMAL
+
+[IntcCoW11.Service]
+DisplayName      = %IntelCoServiceName%
+Description      = %IntelCoServiceDesc%
+ServiceBinary    = %12%\Intel\ICPS\IntcCo11X64.sys
+ServiceType      = 1; SERVICE_KERNEL_DRIVER
+StartType        = 3; SERVICE_DEMAND_START
+ErrorControl     = 1; SERVICE_ERROR_NORMAL
+
+[IntelConnectServiceInstall]
+DisplayName=%ICServiceDisplayName%
+Description=%ICServiceDesc%
+Dependencies=Netman,NetSetupSvc,LanmanServer
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelConnectService.exe"
+ServiceType=0x00000010
+StartType=3;
+
+[IDBWMServiceInstall]
+AddReg=IDBWRegistry
+DisplayName=%IDBWMServiceDisplayName%
+Description=%IDBWMServiceDesc%
+Dependencies=Netman,NetSetupSvc
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IDBWMService.exe"
+ServiceType=0x00000010
+StartType=3;
+
+[IntelAnalyticsServiceInstall]
+AddReg=IntelAnalyticsCOM
+DisplayName=%ICPSAnalyticsService%
+Description=%ICPSAnalyticsServiceDesc%
+Dependencies=
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelAnalyticsService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1;
+
+[IntelProviderDataHelperServiceInstall]
+AddReg=IntelProviderDataHelperCOM, AudioQualityRegistry
+DisplayName=%ICPSProviderDataHelperService%
+Description=%ICPSProviderDataHelperServiceDesc%
+Dependencies=
+ErrorControl=0
+ServiceBinary=%12%\"Intel\ICPS\IntelProviderDataHelperService.exe"
+ServiceType=0x00000010
+StartType=2
+DelayedAutoStart=0x1;
+
+[ICPSCOM]
+; mostly from https://github.com/RivetNetworks/Sniper_Build/tree/master/Install/ServiceCOMRegistryKeys
+HKCR, "AppID\{AE711B96-345B-47C2-9EB0-A6779BD61702}",LocalService, 0, "Intel Connectivity Network Service"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}", , 0, "BandwidthControlManager Class"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}", AppID, 0, "{AE711B96-345B-47C2-9EB0-A6779BD61702}"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}\LocalServer32", , 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelConnectivityNetworkService.exe"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}\LocalServer32", ServerExecutable, 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelConnectivityNetworkService.exe"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}\Programmable", , 0, ""
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "CLSID\{BF2E3B84-9D7F-4DA7-9EDC-104BDCC37727}\Version", , 0, "1.0"
+HKCR, "Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}", , 0, "IServiceManager"
+HKCR, "Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}", , 0, "IMultiInterfaceManager"
+HKCR, "Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}", , 0, "IMultiInterfaceRoutingManagerType1"
+HKCR, "Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}", , 0, "IConfigurationManager"
+HKCR, "Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}", , 0, "INetworkManager"
+HKCR, "Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}", , 0, "IBandwidthControlManager"
+HKCR, "Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}", , 0, "ISpeedTestManager"
+HKCR, "Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}", , 0, "ICategoriesManager"
+HKCR, "Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}", , 0, "IMultiInterfaceRoutingManagerType2"
+HKCR, "Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}", , 0, "IActivityManager"
+HKCR, "Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}", , 0, "IGroupBoostManager"
+HKCR, "Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}", , 0, "IExternalStateManager"
+HKCR, "Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}", , 0, "IScoringManager"
+HKCR, "Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}", , 0, "IConfigurationFileManager"
+HKCR, "Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}", , 0, "_INetworkManagerEvents"
+HKCR, "Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\ProxyStubClsid32", , 0, "{00020420-0000-0000-C000-000000000046}"
+HKCR, "Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}", , 0, "IFactoryManager"
+HKCR, "Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}", , 0, "IRulesManager"
+HKCR, "Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\TypeLib", Version, 0, "1.0"
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}", , 0, ""
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}\1.0", , 0, "KillerNetworkServiceLib"
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}\1.0\0", , 0, ""
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}\1.0\0\win64", , 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelConnectivityNetworkService.exe"
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}\1.0\FLAGS", , 0, "0"
+HKCR, "TypeLib\{4D37D161-48B0-4596-8176-F101B9EB7992}\1.0\HELPDIR", , 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS"
+HKCR, "WOW6432Node\Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}", , 0, "IServiceManager"
+HKCR, "WOW6432Node\Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{5365AA5B-1680-42ED-8EF5-69BA221BBDD6}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}", , 0, "IMultiInterfaceManager"
+HKCR, "WOW6432Node\Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{8EFFA521-E949-4EC9-AEDC-7515F95107CA}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}", , 0, "IMultiInterfaceRoutingManagerType1"
+HKCR, "WOW6432Node\Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{04FEDAC1-06C7-4582-BB55-6D06DB5A2885}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}", , 0, "IConfigurationManager"
+HKCR, "WOW6432Node\Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{9F98F4A0-92D0-401F-872E-6FF754C75C60}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}", , 0, "INetworkManager"
+HKCR, "WOW6432Node\Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{9ADB75AC-7A5B-4551-AA8F-F884D0313560}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}", , 0, "IBandwidthControlManager"
+HKCR, "WOW6432Node\Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{41E380A2-33F1-4E3A-A16D-D5FD8802DAB0}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}", , 0, "ISpeedTestManager"
+HKCR, "WOW6432Node\Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{C99F5736-E845-475E-BDF2-FEDC26D75B21}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}", , 0, "ICategoriesManager"
+HKCR, "WOW6432Node\Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{E9940EF8-B024-42D6-BF77-0A0D98C9B843}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}", , 0, "IMultiInterfaceRoutingManagerType2"
+HKCR, "WOW6432Node\Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{4E2482E9-CA3F-45F9-AFB5-1E9178EF2C55}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}", , 0, "IActivityManager"
+HKCR, "WOW6432Node\Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{DEB58C24-C81E-41AB-96BF-86083B812D3F}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}", , 0, "IGroupBoostManager"
+HKCR, "WOW6432Node\Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{395065BA-0BFC-4EB8-979A-81E5C6697D8B}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}", , 0, "IExternalStateManager"
+HKCR, "WOW6432Node\Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{D5DC97BC-97AE-48C5-9C9B-F95D4B35CA5E}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}", , 0, "IScoringManager"
+HKCR, "WOW6432Node\Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{F8C2AFB9-7B7A-4869-876A-59AFA1F072A8}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}", , 0, "IConfigurationFileManager"
+HKCR, "WOW6432Node\Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{BE7CC290-93E5-4BEB-A0C0-40C731D5690F}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}", , 0, "_INetworkManagerEvents"
+HKCR, "WOW6432Node\Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\ProxyStubClsid32", , 0, "{00020420-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{6B1832AC-42B0-42CB-AF5F-68426D42B406}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}", , 0, "IFactoryManager"
+HKCR, "WOW6432Node\Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{884D2AFC-2311-4C57-83A2-D8D5EFBF6D24}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}", , 0, "IRulesManager"
+HKCR, "WOW6432Node\Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\TypeLib", , 0, "{4D37D161-48B0-4596-8176-F101B9EB7992}"
+HKCR, "WOW6432Node\Interface\{57B0B356-118E-4F91-A30B-9B3259231E19}\TypeLib", Version, 0, "1.0"
+HKR, Parameters, ClientCertAllowList, 0x00010000, "020849F1CDAE9EC5A11F4E3599091595|US, ""DigiCert, Inc."", DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "0824024FDA0B4B1B496EEEDDFCFF6E16|US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "00BFCCE9854E3F154FF8E62C2CE2FDE84D|GB, Greater Manchester, Salford, Sectigo Limited, Sectigo RSA Code Signing CA"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "1B5D44BDF5D1E1BA8925F7E82F62846C|US, ""Entrust, Inc."", Entrust Extended Validation Code Signing CA - EVCS2"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "344FEF6C8F4300CFEDA4B192B2D77721|US, ""Entrust, Inc."", Entrust Extended Validation Code Signing CA - EVCS2"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "009A2B7FB37C5EEACF4F232411E00B458D|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "00847577BD5CC2A84781FE436B69212EF6|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "4541DFD0E3911376AD09D243EEEEAB38|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "0709FF1FCF1683C6BB30D6623C57C7A2|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "2499BC76B8D555CBEACD2430255D8908|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "00DEDA48B8CFDAEA53A695A8FC64C035FA|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "655C2BD180E9C4FB3B082C765158D5A7|GB, Sectigo Limited, Sectigo Public Code Signing CA EV R36"
+HKR, Parameters, ClientCertAllowList, 0x00010008, "225AE1BB2425CD25C8B4FCC58E6FC01A|US, ""Entrust, Inc."", Entrust Extended Validation Code Signing CA - EVCS2"
+
+[IntelAnalyticsCOM]
+HKCR, "AppID\{D56844B7-6E35-4523-914B-2D0FE848E023}",LocalService, 0, "IntelAnalyticsService"
+
+[IntelProviderDataHelperCOM]
+HKCR, "AppID\{E0CDEDFD-9169-4963-8795-BA014F928892}",LocalService, 0, "IntelProviderDataHelperService"
+
+[EventLogRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Analytics Service", CategoryCount, 0x00010001, "00000004"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Analytics Service", CategoryMessageFile, 0x00020000,"%%systemroot%%\system32\drivers\Intel\ICPS\IntelAnalyticsEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Analytics Service", EventMessageFile, 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelAnalyticsEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Analytics Service", TypesSupported, 0x00010001, "00000007"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Connectivity Network Service", CategoryCount, 0x00010001, "00000004"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Connectivity Network Service", CategoryMessageFile, 0x00020000,"%%systemroot%%\system32\drivers\Intel\ICPS\IntelConnectivityEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Connectivity Network Service", EventMessageFile, 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelConnectivityEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Intel Connectivity Network Service", TypesSupported, 0x00010001, "00000007"
+
+[FirstRunRegistry]
+HKR, Parameters, FirstRun, 0x00010001, "00000001"
+HKR, Parameters, Network_BandwidthUp_Default , 0x000B0001, "00000000015000000000"
+HKR, Parameters, Network_BandwidthDown_Default , 0x000B0001, "00000000015000000000"
+HKR, Parameters, SaveAndUploadIntervalSec, 0x00010001, "00090000"
+HKR, Parameters, FileNameExtensionVersion, 0x00010000, "_5"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Connectivity Network Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Analytics Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Provider Data Helper Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IntelConnectService", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IDBWM", Enable, 0x00000000, "False"
+
+[IDBWRegistry]
+HKR, Parameters, DefaultDLBW, 0x000B0001, "00000000015000000000"
+HKR, Parameters, DefaultULBW, 0x000B0001, "00000000015000000000"
+
+[FirstRunRegistry_IID]
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", ValidateOneList_IID, 0x00010000, "Win32_ComputerSystem|Manufacturer@.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", FirstRun, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", Network_BandwidthUp_Default , 0x000B0001, "00000000015000000000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", Network_BandwidthDown_Default , 0x000B0001, "00000000015000000000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", SaveAndUploadIntervalSec, 0x00010001, "00090000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", FileNameExtensionVersion, 0x00010000, "_5"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Connectivity Network Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Analytics Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Provider Data Helper Service", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IntelConnectService", Enable, 0x00000000, "False"
+;HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IDBWM", Enable, 0x00000000, "False"
+
+[FirstRunRegistry_ICA]
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", ValidateOneList_ICA, 0x00010000, "Win32_ComputerSystem|Manufacturer@.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", FirstRun, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", Network_BandwidthUp_Default , 0x000B0001, "00000000015000000000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", Network_BandwidthDown_Default , 0x000B0001, "00000000015000000000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", SaveAndUploadIntervalSec, 0x00010001, "00090000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", FileNameExtensionVersion, 0x00010000, "_5"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Connectivity Network Service", Enable, 0x00000000, "True"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Analytics Service", Enable, 0x00000000, "True"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\Intel Provider Data Helper Service", Enable, 0x00000000, "True"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IntelConnectService\Parameters", Enable, 0x00000000, "True"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel\ICA\ctrlhub\services\IDBWM", Enable, 0x00000000, "True"
+
+[SurfaceADLReg]
+; FOR MSFT SURFACE Devices - ADL - RPL
+HKR, Parameters, CustomizeInstallFirstRunAction, 0x00010001, "00000023"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010000, "Win32_ComputerSystem|SystemSKUNumber@Surface.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMID.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMID.*,Manufacturer@OEMID.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMLO SKU.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMLO SKU.*,Manufacturer@OEMLO.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMEL SKU.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_SurfaceADL, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMEL SKU.*,Manufacturer@OEMEL.*"
+
+[SurfaceReg]
+; FOR MSFT SURFACE Devices - MTL+
+HKR, Parameters, ValidateOneList_Surface, 0x00010000, "Win32_ComputerSystem|SystemSKUNumber@Surface.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_Surface, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMML.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_Surface, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMML.*,Manufacturer@OEMML.*"
+HKR, Parameters, ValidateOneList_Surface, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMHT.*,Manufacturer@.*Microsoft Corporation.*"
+HKR, Parameters, ValidateOneList_Surface, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@OEMHT.*,Manufacturer@OEMHT.*"
+
+[DellReg]
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", ValidateOneList_Dell, 0x00010000, "Win32_ComputerSystem|Manufacturer@.*Dell.*" ; Change to Manufacturer Dell for Production
+HKLM, "SYSTEM\CurrentControlSet\Services\IDBWM\Parameters", ProductMode, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\IntelConnectService\Parameters", ProductMode, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Connectivity Network Service\Parameters", ProductMode, 0x00010001, "00000001" ; Proper value TBD, for now this works
+
+[DBWRegistry]
+HKR, Parameters, DynamicBandwidthMode, 0x00010001, "00000001"
+
+[APSRegistry]
+HKR, "Parameters"
+
+[vProRegistry]
+HKR, Parameters, vPro, 0x00010001, "00000001"
+
+[EventLogInstall]
+AddReg=EventLogRegistry
+
+[MonitorModeRegistry]
+HKR, Parameters, NRMode, 0x00010001, "00000001"
+
+[AudioQualityRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Provider Data Helper Service\Parameters", BtAudioQuality_MinThreshold, 0, "0.5"
+HKLM, "SYSTEM\CurrentControlSet\Services\Intel Provider Data Helper Service\Parameters", BtAudioVscEventInterval, 0, "5"
+
+
+; User visible strings
+;-------------------------------------------------
+[Strings]
+Bundle = "Intel(R) Connectivity Performance Suite DCHU Component Installation Disk"
+IntelCoServiceName  = "INTCCoSvc"
+IntelCoServiceDesc  = "Intel Connectivity Traffic Control Callout"
+ICPS_Service = "Intel Connectivity Network Service"
+ICPSComponent = "Intel(R) Connectivity Performance Suite"
+ICPSServiceDesc = "Intel Connectivity Network Service provides network enhancements and optimizations"
+ICPSAnalyticsService = "Intel Analytics Service"
+ICPSAnalyticsServiceDesc = "Intel Analytics Service"
+ICPSProviderDataHelperService = "Intel Provider Data Helper Service"
+ICPSProviderDataHelperServiceDesc = "Intel Provider Data Helper Service"
+ICService = "IntelConnectService"
+ICServiceDisplayName = "IntelConnect Service"
+ICServiceDesc = "Provides a service which automatically connects to the best known WiFi AP."
+IDBWMService = "IDBWM"
+IDBWMServiceDisplayName = "Intel Dynamic Bandwidth Management"
+IDBWMServiceDesc = "This service dynamically manages bandwidth settings based on detection of internet traffic congestion."
+IntelCorp = "Intel Corporation"

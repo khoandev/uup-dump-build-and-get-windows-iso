@@ -372,7 +372,7 @@ function Get-WindowsIso($name, $destinationDirectory) {
   if ($drivers -and $arch -ne "arm64") {
     $convertConfig = $convertConfig -replace '^(AddDrivers\s*)=.*', '$1=1'
     $tag += ".D"
-    Write-CleanLine "Copy Dell drivers to $buildDirectory directory"
+    Write-CleanLine "Copy drivers to $buildDirectory directory"
     Copy-Item -Path Drivers -Destination $buildDirectory/Drivers -Recurse
   }
   if ($netfx3) { $convertConfig = $convertConfig -replace '^(NetFx3\s*)=.*', '$1=1'; $tag += ".N" }
