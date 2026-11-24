@@ -40,6 +40,10 @@ Edition:
 * `home`
 * `pro`
 * `multi`: Home + Pro
+* `n`: Windows N (same as Home N; ships without the media features the EU requires to be removable)
+* `home-n`: Home N
+* `pro-n`: Pro N
+* `multi-n`: Home N + Pro N
 
 
 Language:
